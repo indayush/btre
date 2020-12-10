@@ -1,0 +1,11 @@
+python -m venv venv
+pip3 freeze
+F:\Workspaces\vscode-ws\Django\btre_project\venv\Scripts\activate.ps1
+pip3 freeze
+pip install Django
+django-admin help
+Ctrl+Shift+P Select Interpreter as venv python
+git init
+<Create .gitignore file from gitignore,io>
+
+
