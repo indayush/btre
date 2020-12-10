@@ -6,6 +6,19 @@ pip install Django
 django-admin help
 Ctrl+Shift+P Select Interpreter as venv python
 git init
-<Create .gitignore file from gitignore,io>
+# <Create .gitignore file from gitignore,io>
+git add .
+git commit -m "Initial Commit"
+python manage.py runserver
 
+############################################################################
+# Create one more console in vscode - one for server one for applications  #
+#No psaces = Server commands                                               #
+#   1 Tab space = Application commands                                     # 
+############################################################################
+
+
+    python manage.py startapp pages
+    pip install autopep8
+    
 
