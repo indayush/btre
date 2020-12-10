@@ -24,5 +24,12 @@ python manage.py runserver
     python manage.py startapp listings
     python manage.py startapp realtors
 
-    
+<
+install Postgresql DB & pgAdmin - 
+
+https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+https://www.postgresql.org/ftp/pgadmin/pgadmin4/v4.29/windows/
+
+
+>    
 
