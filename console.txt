@@ -44,5 +44,6 @@ python manage.py runserver
     <python manage.py sqlmigrate listings 0001> Optional just to see what SQL query will look like
     <python manage.py sqlmigrate realtors 0001> Optional just to see what SQL query will look like
     python manage.py migrate
+    python manage.py createsuperuser
     
      
