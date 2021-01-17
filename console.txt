@@ -49,4 +49,7 @@ python manage.py runserver
     pip install pylint-django
 
     Creating another app for managing User logins
-    python manage.py startapp accounts     
+    python manage.py startapp accounts 
+
+    After changing something in the static\js\.js file - Need to collect the data via -
+    python manage.py collectstatic    

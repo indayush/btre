@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 
 def register(request):
 
@@ -6,6 +7,10 @@ def register(request):
     if request.method == 'POST':
         print(request)
         print("Request is submitted")
+
+        messages.error(request,'Testing Error Message')
+
+        return redirect('register')
         # print("Request is submitted " + request) This is not allowed
         # i.e. - Mixed static and dynamic values
         # return redirect('register')
