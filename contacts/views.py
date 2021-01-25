@@ -1,6 +1,9 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages, auth
 from .models import Contact
+from django.core.mail import send_mail
+
+enableMailFunctionality = True
 
 def contact(request):
     if request.method == 'POST':
@@ -23,6 +26,16 @@ def contact(request):
         
         contact = Contact(listing=listing, listing_id=listing_id, name=name, email=email, phone=phone, message=message, user_id=user_id)
         contact.save()
+
+        # Send Mail
+        if enableMailFunctionality:            
+            send_mail(
+                'Property Listing Enquiry',
+                'There has been an enquiry for ' + listing + '. Sign in to the admin panel for more info',
+                'ayushadarsh3@gmail.com',
+                [realtor_email, 'shareduploaddrive@gmail.com'],
+                fail_silently=False
+            )
 
         messages.success(request, 'Your request has been submitted. The realtor will get back to you soon')
         return redirect('/listings/'+listing_id)
