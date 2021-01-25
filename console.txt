@@ -56,3 +56,7 @@ python manage.py runserver
     python manage.py collectstatic    
     Close the server and press Shift+F5 to clear the browser cache
     
+    Creating new app for managing the Contact Me form for listings
+    python manage.py startapp contacts
+    python manage.py makemigrations contacts
+    python manage.py migrate
