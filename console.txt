@@ -52,4 +52,7 @@ python manage.py runserver
     python manage.py startapp accounts 
 
     After changing something in the static\js\.js file - Need to collect the data via -
+    Delete the older .\static folder generated from django 
     python manage.py collectstatic    
+    Close the server and press Shift+F5 to clear the browser cache
+    
